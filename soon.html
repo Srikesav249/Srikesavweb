@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Apply dark theme -->
+  <style>
+    :root {
+      --bg-color: #1a202c;
+      --text-color: #e2e8f0;
+      --accent-color: #3b82f6;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: sans-serif;
+    }
+  </style>
+  <!-- Include animate.css for animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Home button -->
+  <a href="home.html" class="fixed top-4 left-4 z-10 text-white bg-gray-800 rounded-full p-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+    </svg>
+  </a>
+
+  <div class="flex justify-center items-center h-screen flex-col">
+    <img src="/src/soon.png" alt="Your Photo" class="w-32 h-32 rounded-full mb-4 animate__animated animate__fadeInUp">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-6xl font-bold animate__animated animate__fadeInUp animate__delay-1s">
+        Coming Soon
+      </h1>
+      <p class="text-lg md:text-2xl mt-4 animate__animated animate__fadeInUp animate__delay-1s">
+        We're working on something amazing!
+      </p>
+    </div>
+  </div>
+
+  <!-- Include script to trigger animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>

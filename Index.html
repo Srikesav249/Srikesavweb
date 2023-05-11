@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Apply dark theme -->
+  <style>
+    :root {
+      --bg-color: #1a202c;
+      --text-color: #e2e8f0;
+      --accent-color: #3b82f6;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: sans-serif;
+    }
+  </style>
+  <!-- Include animate.css for animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <!-- Include script for auto redirect -->
+  <script>
+    setTimeout(function() {
+      window.location.href = "/home.html"; // Replace with your desired URL
+    }, 5000); // Change the delay time (in milliseconds) to your desired duration
+  </script>
+</head>
+
+<body>
+  <div class="flex justify-center items-center h-screen">
+    <h1 class="text-4xl md:text-6xl font-bold animate__animated animate__bounceIn animate__delay-2s">
+      <span class="animate__animated animate__heartBeat animate__infinite">Srikesav Km</span>
+    </h1>
+  </div>
+
+  <!-- Include script to trigger animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
